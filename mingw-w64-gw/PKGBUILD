@@ -3,7 +3,7 @@
 _realname=gw
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=0.5.0
+pkgver=0.5.1
 pkgrel=1
 pkgdesc="A genome browser for bam/cram and vcf files (mingw-w64)"
 arch=(any)
@@ -23,7 +23,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-htslib"
          "${MINGW_PACKAGE_PREFIX}-dlfcn"
          "${MINGW_PACKAGE_PREFIX}-libpng" )
 source=(https://github.com/kcleal/${_realname}/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('8b6b85b337602052b4ca2a3259152f1be56ffab97c6b6a0150046d7a1bbf4333')
+sha256sums=('56cf4d9cace81073899d69ec8f0b72281288cfcf2c7c165ae4fc44b4e6007fe9')
 
 prepare() {
   cd ${_realname}-${pkgver}
